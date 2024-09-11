@@ -28,3 +28,36 @@ Use a truth table to prove (p -> q)/q } q
 |F|F|T|F|T|
 
 A statement whose truth table is ALWAYS false is known as a **contradiction**.
+
+### Ex. 1.6: Show p ^ ¬p is a contradiction
+
+|p|¬p|p ^ ¬p|
+|-|:-:|:---:|
+|T|F|F|
+|T|F|F|
+|F|T|F|
+|F|T|F|
+
+Statements that are neither contradictions or tautologies (every other statement) is a **contigency**. We can also derive
+statements from other statements using tautologies and *derivation rules* (37). Types of derivation rules:
+- Equivalence rules:
+    - a <=> b: a can deduce b and vice versa
+- Inference rules:
+    - only works in one direction (a => b): can only deduce b from a
+    - You can conclude a weaker statement (T's that line up but also other T's) from a stronger statement.
+
+**Proof sequences** can be used to justify an assertion like a => c. You can have any number of statements in between a and c but they all have to be derived using the derivation rules. 
+
+### Ex. 1.7: Write a proof sequence for for the assertioion p/(p -> q)/(q -> r) } r
+
+p ^ (p -> q) ^ (q -> r) => r | *Modus Ponens*
+
+You can also use current/previous proofs in future proofs
+
+### Ex. 1.8: Prove (p v q)/¬p => q
+
+I don't know what they mean by prove. I'll ask either by email or through office hours. Ok, really it's can you show
+through substitutions and transformations that two statements are equal to each other. p -> q == ¬p v q and then make more
+and more subs until you find what you're looking for. 
+
+# Textbook Reading 1.3: 
