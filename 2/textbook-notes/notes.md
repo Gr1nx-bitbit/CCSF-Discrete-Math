@@ -60,4 +60,15 @@ I don't know what they mean by prove. I'll ask either by email or through office
 through substitutions and transformations that two statements are equal to each other. p -> q == ¬p v q and then make more
 and more subs until you find what you're looking for. 
 
-# Textbook Reading 1.3: 
+# Textbook Reading 1.3: Predicate Logic
+
+A **predicate** is a declarative sentence whose T/F value depends on one or more unkown variabes. Only after the variables 
+have been given values, does the statement become a statement. Predicates also have **domains** or a list/type of value that 
+their variables can take (numbers, physical objects, etc.) and is usually stated. Preicates also have **quantifiers** which
+quantify the validity of variables. For example, the universal quantifier (**V**x)E(x) says that EVERY value for that variable
+will give a true result, while the exstistential quantifier (**∃**x)E(x) says that SOME values of x gives a true result for E(x).
+Really, the power of predicate logic comes in giving propositional logic flexibility. The **scope** of a quantifier is usually the
+set of parenthases directly after itself e.g. (Vx)(_...scope of Vx_...), (∃x)(_...scope of ex..._). 
+
+Negation is pretty straightfoward. ¬[(Vx)E(x)] --> (∃x)[¬E(x)]. This leads up to manipulating propositional logic like before but with
+free variables. 
