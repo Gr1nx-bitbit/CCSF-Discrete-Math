@@ -1,0 +1,11 @@
+# Textbook Reading 1.4
+
+**Defnitions** in math texts are not just descriptions of an object or action; they are REQUIREMENTS for a symbol, term, or something else e.g. definition: lines are parallel if they have no intersections
+
+To **prove** something mathematically, you need to use the definitons given to you e.g. an integer n is odd IF AND ONLY IF n = 2k + 1, k an integer -> 17 is odd because 17 = 2*8 + 1. You CANNOT have more than one definiton for a single term. <font color="red">Definitions are logical "if an only if" <--> statements!!</font> Usually definitons are written as [Object] *x* is [defined term i.e. even || an integer] if [definiting property i.e. x = 2k, k an integer || integer definitng prop] --> D(x) = x is [defined term], P(x) = [x definig property], (Vx)(D(x) <--> P(x)).
+
+**Axioms** or **postulates** are your basic building terms. We need some statement to build off of otherwise it would be impossible to prove anything. These guys are fundamental and basic assumptions about the/your world. **Theorems** are logical statements that follow existing axioms, definitons, and or other theorems. **Proofs** are statements/arguments that prove the validity/truth of a statement or theorem using definitons, proven theroems, and or axioms. 
+
+Usually math statements are like (Vx)P(x), and we know the negation. Only one or the other can be true but not both, therefore if you find a ¬P(x) then you know (Vx)P(x) is false. A **counterexample** is like the ¬P(x) or something that shows the original statement to be false.
+
+**Axiomatic Systems** have **undefined terms** (these guys are abstractions and have no formal meaning) which act as the starting vocabulary for a system e.g. a system for four point geometry --> undefined terms: point, line, is on, etc. Some undefined terms can be better defined as definitons but you will need some undefined terms to start with. **Models** are a specific context in which all undefined terms have meaning and all the axioms are true.
