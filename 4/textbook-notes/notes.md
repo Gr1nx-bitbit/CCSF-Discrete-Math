@@ -19,12 +19,12 @@ Graphs are the mathmateical way of drawing relationships between discrete sets o
 Nodes are the **verticies** and the connecting lines between nodes are **edges**. Directed graphs have arrows on the edges while undirected graphs don't. 
 
 ### Terminology
-The **degree** of a vertex is the number of times an edge touches it (not just how many individual edges touch it); an edge can touch a vertex multiple times via loops. **Indegrees** are how many edges connected to the vertex that lead into it, while **outdegrees** are the opposite. A **path** is the sequence of verticies connected by edges where the ith edge connects the ith-minus-one vertex and the ith vertex. A **circuit** is a graph whose end vertex is the same as its start vertex. Graphs are **connected** if any two or more verticies are connected. 
+The **degree** of a vertex is the number of times an edge touches it (not just how many individual edges touch it); an edge can touch a vertex multiple times via loops (really its how many edges branch out from the vertex!). **Indegrees** are how many edges connected to the vertex that lead into it, while **outdegrees** are the opposite. A **path** is the sequence of verticies connected by edges where the ith edge connects the ith-minus-one vertex and the ith vertex. A **circuit** is a graph whose end vertex is the same as its start vertex. Graphs are **connected** if any two or more verticies are connected. 
 
 In graphs, the degree number is twice that of the edge number (since edges connect two verticies). 
 
 ### Modeling Relationships with Graphs
-The **coloring** of a graph is when you assign metadata to a vertex (metadata can be shared between vertecies) i.e. two vertecies can have a "color" or value of "323 elephants" or something else arbitrary. A graph is **planar** if you cna draw it without any of the edges crossing each other. A graph with numerical values (**weights**) on its edges is called a **network**.
+The **coloring** of a graph is when you assign metadata to a vertex (metadata can be shared between vertecies) i.e. two vertecies can have a "color" or value of "323 elephants" or something else arbitrary. A graph is **planar** if you cna draw it without any of the edges crossing each other. A graph with numerical values (**weights**) on its edges is called a **network**. An **Euler Path** is one in which every edge is used exactly ONCE. 
 
 Example 2.3: Several departments around campus have wireless access points (WAPs), but problems arise if two WAPs within 200 feet of each other are operating on the same frequency. Suppose the departments with WAPs are situated as follows.
 
