@@ -75,3 +75,6 @@ The *power set* is the set that holds all the subsets of another set --> P(S) = 
 Sets may have different types of elements; some sets' elements will be numbers, others, tuples, others sets, etc. 
 
 p => p v q == A ⊆ (A ∪ B), De Morgan's laws --> (A ∪ B)' = A' ∩ B' --> (A ∩ B)' = A' ∪ B'. 
+
+### Identities
+Just like how we proved stuff using propositional logic, we can do the same with set theory. If a set has a finite number of items in it, we can represent that by using the absolute value notation. If *S* is the set that holds the members of the House of Reps, then |*S*| = 435. You can then use set magnitudes as numbers in an equation e.g. a student society has 11 members, 8 of which have 2400 SAT scores and 5 of which have 4.0 GPAs; how many members have both 2400 SAT and 4.0 GPAs? --> A = {x | x is a student with 4.0 GPA}, B = {x | x is a student with a 2400 SAT score} 11 = 8 + 5 - |A ∩ B| --> |A ∩ B| = 13 - 11 --> |A ∩ B| = 2, therefore there are two students how have both 2400 SAT scores and 4.0 GPAs. 
