@@ -40,3 +40,38 @@ Example 2.3: Several departments around campus have wireless access points (WAPs
 |Chemistry|Math, Psychology, Sociology, Physics|
 
 Solution attempt: We're going to need as many frequencies as as the vertex with the most edges, I think. There might be a problem if that vertex shares an edge with another vertex that has n - 1 frquences. I got it right I think. 
+
+# Textbook Reading 2.2: Sets
+*Inquiry 2.3*: A certain discrete mathematics class consists of 21 students. Of these, 10 plan to major in mathematics and 13 plan to major in computer science. Five students are not planning to major in either subject. How many students plan to major in both subjects? Draw
+a diagram to explain your reasoning.
+- I can kind of visualize venn diagrams but it feels like there could be a lot of variability, like 11 students can be majoring in BOTH CS and Maths leaving only 2 other students to major in CS. We do know that 5 students won't major in either which leaves us with 16 students in total majoring in either CS, Maths, or both. From there we can only guess though or come up with a set of possibilites (haha, get it?). 
+
+*Inquiry 2.4*: Explain the distinction between the following two scenarios.
+- Scenario A: A professor chooses three students to work together on a problem.
+    - 3 unique students 
+    - One common problem
+- Scenario B: A professor asks three questions in sequence, and each time calls on a student to answer.
+    - 3 unique problems
+    - common body of students (duplicates possible)
+- How are the professor’s choices constrained in each scenario? Compare and contrast.
+    - In the first scenario, the professor needs to pick 3 unique students to work on a singular problem while in the second scenario the professor is constrained to 3 problems and has to pair a student to each answer; the student for each answer can be any of the available ones i.e. they don't have to be unique.
+
+*Inquiry 2.5*: Consider the following collections of natural numbers.
+- Collection T: All multiples of 2.
+- Collection R: All multiples of 3.
+- Collection S: All multiples of 5.
+- How are these collections related? Is there any overlap? Explain your findings in some organized way.
+    - Numbers in each collection can appear in a different collection. 
+
+A way of desribing *related groups of objects* is through **sets**. Something can be said to be in a set like when defining functions, f(x) = 2x + 3, x ∈ *S*. Or we can show what a set defines like so: *S* = {x1, x2, x3, ..., xn}. We can also say that certain elements of the set have a property; this can be denoted using the pipe (| but it's called "set builder notation") --> {x ∈ S | x has property p}. We can also make new sets from old sets like so:
+- Initial set: A = {1, 2, 3, 4, 5, 6, 7, 8}
+- New set: B = {x ∈ A | x is odd} => B = {1, 3, 5, 7}
+There are also common/colloquial sets like **Z** for all positive integers, **N** for all natural numbers, and **R** for all real numbers. 
+There is a common symbol used for the predicate logic of (Vx)(x ∈ A -> x ∈ B) --> A ⊆ B [⊆ is the set equivalent for ->], or A is a subset of B. Ø is another special set which is the *empty set*; that is, there are no elements in it therefore it is a subset of every set. The *union* of sets is a set where all the elements of its components are contained i.e. (Vx)(A ∪ B) is equivalent to (Vx)([x ∈ A] v [x ∈ B]) --> A ∪ B = {x | (x ∈ A) v (x ∈ B)} and consequently (Vx)[x ∈ A ∪ B <--> (x ∈ A) v (x ∈ B)]. ∩ is set AND equivalent, so C = A ∩ B means that C is a set that contains the elemts that A and B have in common. A ∩ B = {x | (x ∈ A) ^ (x ∈ B)}. The domain is implicit which is really the *Universal set*. The **complement of a set** is all elements in the Universal set expect the ones in the original set e.g. A = {...}, A' = {x ∈ U | x ∉ A} OR A' = {x ∈ U | ¬(x ∈ A)}. To say two sets are equal we use <--> or =. A = B is equivalent to (Vx)(x ∈ A <--> x ∈ B). 
+
+I need to go back over the proofs man...
+
+The *power set* is the set that holds all the subsets of another set --> P(S) = {X | X ⊆ S}
+Sets may have different types of elements; some sets' elements will be numbers, others, tuples, others sets, etc. 
+
+p => p v q == A ⊆ (A ∪ B), De Morgan's laws --> (A ∪ B)' = A' ∩ B' --> (A ∩ B)' = A' ∪ B'. 
