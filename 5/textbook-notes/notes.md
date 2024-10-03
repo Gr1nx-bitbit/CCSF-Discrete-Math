@@ -32,3 +32,5 @@ A function that is both one-to-one and onto is called a *one-to-one corresponden
 **Ex 2.28** Prove that the function f : R → R defined by f (x) = 2x + 1 is a one-to-one correspondence. Ok, so to prove the onto part, we have to take a value from 2x + 1 and show that it comes from some x; 2x + 1 ∈ **R** and x ∈ **R** therefore the function is onto. Now to prove that the function is one to one; 2a + 1 = 2b + 1 -> 2a = 2b -> a = b therefore one y value can only come from a single x value. Ehh, idk if this is right, the book did it some other way.
 
 We can create new functions by composing old ones (f ◦ g); f ◦ g does not necessarily equal g ◦ f. Undoing a function to map a value back to where it came from is called the inverse. Inverse functions have to be one-to-one and there is a semi-example on 121. I have no idea what the last part is about.
+
+An **inverse function** is one that undos an orginal function; basically it maps the codomain elements back to the original domain elements.
