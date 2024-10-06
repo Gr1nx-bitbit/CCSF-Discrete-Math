@@ -1,3 +1,4 @@
+## Textbook Reading 2.3
 **Functions** are relatinoships between two or more sets of objects where the value of at least one object is completely dependent on another (think about parametric equations). 
 
 **Definiton 2.1**: An f-graph is a directed graph where each vertex has outdegree 1.
@@ -34,3 +35,46 @@ A function that is both one-to-one and onto is called a *one-to-one corresponden
 We can create new functions by composing old ones (f ◦ g); f ◦ g does not necessarily equal g ◦ f. Undoing a function to map a value back to where it came from is called the inverse. Inverse functions have to be one-to-one and there is a semi-example on 121. I have no idea what the last part is about.
 
 An **inverse function** is one that undos an orginal function; basically it maps the codomain elements back to the original domain elements.
+
+## Textbook Reading 2.4
+A **relational** is a more general mathmateical object that describes relationships. 
+
+**Definition 2.5** An r-graph is a directed graph with no multiple edges. That is, for all vertices u, v, there can be at most one edge from u to v.
+
+*Inquiry 2.9* Recall Definition 2.1. Is every f-graph also an r-graph? Explain. --> It seems like it; an f-graph's domain elements have at most one outdegree but that doesn't necessarily mean that all the codomain elements have 1 indegree or an indegree at all; aha, so not all because some of the verticies might not have edges connecting them; does that actually violate the definiton? Oh, EACH vertex has one outegree therefore u can have an edge towards v and v can have an edge towards u.
+
+*Inquiry 2.10* Give an example of an r-graph with at least five vertices that is not an f-graph. Invent a shorthand notation that encodes all the information needed to reconstruct the graph. Compare to Inquiry Problem 2.6. --> A one to one graph i think?
+
+*Inquiry 2.11* Construct a directed graph whose vertices represent the integers 1, 2, ..., 7, where there is an edge from vertex n to vertex m if m − n is even. What properties do you notice about this graph? Would these properties remain if the graph were constructed using a longer list of integers? --> Nah
+
+**Definition 2.6** A relation on a set S is a subset of S × S. If R is a relation on S, we say that “a is related to b” if (a, b) ∈ R, which we sometimes write as a R b. If (a, b) ∉ R, then a is not related to b; in symbols, a /R b.
+
+**Ex 2.34** If S = {1, 2, 3} and the symbols =, <, >, ≤, ≥ all define relationships on Z then the relation of S defined by < is {(1, 2), (1, 3), (2, 3)}
+
+If a, b, ∈ P and a *R* b means that a and b are brothers, then R is a relationship on P. We can also define relationships like so:
+Let W be the set of all web pages; L = {(a, b) ∈ W x W | a has a link to b}, then (a, b) means the web page a in the first W has a link to the web page B in the second W. 
+
+**Definition of modulus (≡ n)** is x = a + kn
+
+**Definition 2.7** Let *R* be a relation on a set X. The directed graph associated with (X, *R*) is the graph whose vertices correspond to the elements of X, with a directed edge from vertex x to vertex y whenever x *R* y.
+
+**Symmetric relations** are ones where a *R* b is true (a has a directed edge to b) and b *R* a is also true. 
+
+**Definition 2.8** Let *R* be a relation on a set X, and suppose x *R* y ⇔ y *R* x for all x, y ∈ X. The undirected graph associated with (X, *R*) is the graph whose vertices correspond to the elements of X, with an (undirected) edge joining any two vertices x and y for which x *R* y.
+
+The strict definition of a relationship is that each element in the domain has an outdegree towards another element. The difference between relations and functions is that function outputs depend on their respective inputs while relationships cam be had between however many or few elements. By the way, the '|' sign is a modulo operator where a | b means a modulos b, 2 | 6 = 0 because 6 % 2 = 0. 
+
+**Definition 2.9** A relation *R* on a set S is an equivalence relation if it satisfies all three of the
+following properties.
+1. *Reflexivity*. For any a ∈ S, a R a.
+2. *Symmetry*. For any a, b ∈ S,a *R* b ⇔ b *R* a.
+3. *Transitivity*. For any a, b, c ∈ S, if a *R* b and b *R* c, then a *R* c.
+
+For proofs using definiton 2.9, you have to prove each property! Look at examples 2.42 and 2.43. **Partitions** are distinct blocks within sets; the set P = {X, Y, Z} is a partition of S; X ∩ Y = Ø && Y ∩ Z = Ø
+
+**Theorem 2.2** Let *R* be an equivalence relation on a set S. For any element x ∈ S, define R(sub-x) = {a ∈ X | x *R* a}, the set of all elements related to x. Let P be the collection of distinct subsets of S formed in this way, that is, P = {R(sub-x) |x ∈ S}.Then P is a partition of S.
+
+**Proposition 2.1** Let [a] and [b] be equivalence classes in Z/n. Suppose that x ∈ [a] and y ∈
+[b]. Then x + y ∈ [a + b] and xy ∈ [ab]. (The brackets means integer but they keep their sign, Z/n means that the number has to be a multiple of n as defined with division a = kb). 
+
+This proposition basically proposes that **modular arithmetic** is true, meaning that [a] + [b] = [a + b] and that [a]•[b] = [ab]. The way you use the modulo operator (≡) is like so; x ≡ (remainder) mod (y) --> x % y = (remainder) --> 14 % 12 = 2. Modular arithmetic might look like so; Z/n, [a] + [b] = [a + b] % n = (remainder) OR [a]•[b] = [ab] % n = (remainder). By the way, moduluoing a smaller number results in a negative remainder number, e.g. 5 ≡ -1 mod 6. 
