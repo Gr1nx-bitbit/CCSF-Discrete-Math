@@ -9,7 +9,7 @@
 
 *Inquiry 2.8* Let E be the set of even integers and let O be the set of odd integers. Suppose that a computer is programmed to input a sequence of elements of E and output a sequence of elements of O according to some rule. You run a test of this program using 12, 6, 8, 10, 2 as input, and the computer outputs 81, 9, 25, 49, 1. What rule does the computer appear to be using? --> 12 goes to 81, 6 goes to 9, 8 goes to 25, 10 goes to 49, 2 goes to 1. It seems like 1 is being subtracted; idk
 
-**Definition 2.2**: A function from a set X to a set Y is a well-defined rule that assigns a single element of Y to each element of X. If f is such a function, we write: f : X -> Y, and we denote the element of Y assigned to x ∈ X by f (x). The set X is called the domain of the function, and the set Y is called the codomain. --> Ok, so this means that each element of X has one value of y but doesn't necessarily mean that all numbers in the set of Y will be used up, as an example think of x^2, the set Y is **R** but only a fraction of those numbers are used. 
+**Definition 2.2**: A function from a set X to a set Y is a **well-defined** rule that assigns a single element of Y to each element of X. If f is such a function, we write: f : X -> Y, and we denote the element of Y assigned to x ∈ X by f (x). The set X is called the domain of the function, and the set Y is called the codomain. --> Ok, so this means that each element of X has one value of y but doesn't necessarily mean that all numbers in the set of Y will be used up, as an example think of x^2, the set Y is **R** but only a fraction of those numbers are used. 
 
 Functions can also be called **maps**; like a thing that defines the route from one value in a set to another. 
 
