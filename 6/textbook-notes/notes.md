@@ -30,3 +30,18 @@ Three more porperties for a lattice to become a **boolean algebra** on 149.
 
 **Theorem 2.4** Let X be a finite set. Suppose that the poset (X, ≤) is a Boolean algebra. Then |X| = 2^n for some n ∈ N, and:
     (X, ≤) ≅ (P({1, 2, ..., n}), ⊆).
+
+## Textbook Reading 2.6
+**Definition 2.12** A directed graph G is a finite set of vertices V-subG and a finite set of edges E-subG, along with a function i: E-subG → V-subG × V-subG. For any edge e ∈ E-subG, if i(e) = (a,b), we say that edge e joins vertex a to vertex b. --> basically, we say that there are ordereed pairs of the verticies and that an edge can connect one vertex to another. 
+
+**Definition 2.13** An undirected graph G is a finite set of vertices V-subG and a finite set of edges E-subG, along with a function i: E-subG → V-subG × V-subG. For any edge e ∈ E-subG, if i(e) = (a, b), we say that vertices a and b are joined by edge e, or equivalently, e joins a to b and e joins b to a. (Here it is possible that a = b; if i(e) = (a, a), then e is a loop joining a to itself.)
+
+Remember, **isomprphic** graphs are ones that share the same fundamental structure. 
+
+**Definition 2.14** Let G be a graph with vertex set V-subG and edge set E-subG, and let H be a graph with vertex set V-subH and edge set E-subH. Then G is isomorphic to H if there are one-to-one correspondences (α: V-subG → V-subH and β: E-subG → E-subH) such that, for any edge e ∈ E-subG, e joins vertex v to vertex w ⇔ β(e) joins vertex α(v) to vertex α(w). In this case, we write G ≅ H. Basically, the values for each ith vertex and jth edge are the same. 
+
+**Theorem 2.5** Let G and H be graphs without multiple edges, with vertex sets V-subG and V-subH, respectively. For vertices x and y, write x R y if an edge joins x to y. If there is a one-to-one correspondence f : V-subG → V-subH with the property that [x R y ⇔ f(x) R f(y)] for all x, y ∈ V-subG, then G ≅ H.
+
+Graphs are isomorphic if they have the same edges, verticies, and same degree on verticies.
+
+**Definition 2.15** Let G be an undirected graph, and let x ∈ VG be a vertex. Let D1 be the set of all edges e ∈ EG such that i(e) = (x,b)for some b, and let D2 be the set of all edges e ∈ EG suc hthat i(e) = (a, x) for some a. Then the degree of x is |D1| + |D2|
