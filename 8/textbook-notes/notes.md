@@ -1,0 +1,8 @@
+# Reading 3.3: Recursive Definitions
+An **object** is a pretty loose term, it just refers to the thing we want to define recursively. We can define an object in recursive terms with its **base case (B)** which describes the simplest object possible and its **recursive case (R)** which defines a more complex object in terms of simpler objects. A recursive definition can also have *MORE than a single base case!!* I don't think this would be true for recursive cases unless you could transition between separate recursive cases reliably - nevermind, you can have multiple recursive cases (example 3.17) - it seems like if you want multiple recursive cases, they have to have the same effect on the object, just coming from different conditions - would some conjugation then be multiple recursive forms?? A **string** is a sequence of symbols, the same thing as in CS. 
+
+**Theorem 3.1** (for strings) If *a* is a symbol (CS character) then a^R = a. 
+
+Ex 3.20 Suppose you start browsing the Internet at some specified page p. Let X be the set of all pages you can reach by following links, starting at p. Give a recursive definition for the set X. --> The base case would be B. p in the set of X, then the recursive case would give you a page that comes from within the set and set your new "base" to that new page instead of p | **S** if x is a page in X and y is some page that links to x then y is also in X. 
+
+Ex 3.21 Give a recursive definition for the set of all odd natural numbers (positive odd integers). --> Our base case would be B. 1, and we know the definiton of an odd number to be 2k + 1, k an integer, therefore our recursive case becomes R. 2(n) + 1. | **S** B. 1 is in X, R. if x is in X then so is x + 2. 
