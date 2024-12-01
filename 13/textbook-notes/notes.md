@@ -1,0 +1,3 @@
+# Textbook Reading 5.2
+
+**Traversal algorthims** visit pieces of data within sets or data strucutres and in order for them to be accurate, they need to visit EACH element exactly once. **Greedy algorithms** accomplish a long term goal by completing the most obvious short-term task at every opportunity. A **divide and conquer algorithm** takes a problem and turns it into smaller problems, calling itself again on each piece. 
